@@ -1,0 +1,48 @@
+{
+  "ProjectName": "AAA Hybrid",
+  "ProjectGuid": "6b32f4bc-b668-4f6c-b4c2-c33a92291db6",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.AAAHybrid",
+  "DisplayName": "AAA Hybrid",
+  "Author": "",
+  "Description": "AAA Hybrid",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{e7382d56-477f-459d-aefe-49c313a46f4a}",
+  "WP8ProductID": "{fcde4421-09f9-4638-86ec-460a8194ea13}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.AAAHybrid",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "org.apache.cordova.network-information"
+  ]
+}
