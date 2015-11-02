@@ -1,4 +1,74 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true
+  "views": [
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "searchView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "departure",
+              "title": "Departure",
+              "inputType": "search",
+              "placeholder": "Enter location"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "destination",
+              "title": "Destination",
+              "inputType": "search",
+              "placeholder": "Enter location/event"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "time",
+              "title": "Time",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "checkin",
+              "title": "Check-in",
+              "inputType": "time"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "checkout",
+              "title": "Check-out",
+              "inputType": "time"
+            }
+          ],
+          "name": "searchViewModel",
+          "submitButton": "Go"
+        }
+      ],
+      "title": "Search",
+      "addToNavigation": true,
+      "icon": "search"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "optionView",
+      "components": [],
+      "title": "Option View",
+      "addToNavigation": true,
+      "icon": "info"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "parkingOptionsView",
+      "components": [],
+      "title": "Parking Options",
+      "addToNavigation": true,
+      "icon": "home"
+    }
+  ],
+  "dataProviders": [],
+  "name": "kendoUiMobileApp",
+  "navigation": "none",
+  "view": "searchView",
+  "skin": "flat"
 }
