@@ -16,7 +16,9 @@ app.searchView = kendo.observable({
             destination: '',
             departure: '',
         },
-        submit: function() {}
+        submit: function() {
+            app.mobileApp.navigate('components/parkingOptionsView/view.html');
+        }
     });
 
     parent.set('searchViewModel', searchViewModel);
