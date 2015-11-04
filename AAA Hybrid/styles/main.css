@@ -129,6 +129,22 @@
 
 
 /* START_CUSTOM_CODE_kendoUiMobileApp */
+.appIcon{
+    background-color: #0075FF;
+    margin: 2em auto;
+    width: 6em;
+    height: 6em;
+    
+    color:#FFF;
+    text-align:center;
+    border-radius: 0.5em;
+}
+
+.form-content.km-list input[type=search],
+.form-content.km-list input[type=time]{
+    width: 65%;
+}
+
 /*Navbar*/
 .km-accent.km-navbar {
     background-color: #0075FF;

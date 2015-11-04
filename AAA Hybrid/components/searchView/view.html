@@ -1,23 +1,24 @@
 <div data-role="view" data-title="Search" data-layout="mainnonav" data-model="app.searchView" data-show="app.searchView.onShow" data-after-show="app.searchView.afterShow">
     <div id="searchViewModel" class="form-view">
+        <div class="appIcon">Logo</div>
         <form>
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li>
 
-                    <label>Departure
+                    <label>From
                         <input data-bind="value: searchViewModel.fields.departure" placeholder="Enter location" type="search">
                     </label>
 
                 </li>
                 <li>
 
-                    <label>Destination
+                    <label>To
                         <input data-bind="value: searchViewModel.fields.destination" placeholder="Enter location/event" type="search">
                     </label>
 
                 </li>
                 <li class="group-separator">
-                    <h4 class="group-separator-header">Time</h4>
+                    <h4 class="group-separator-header">Parking</h4>
                 </li>
                 <li>
 
