@@ -1,29 +1,37 @@
-<div data-role="view" data-title="Search" data-layout="main" data-model="app.searchView" data-show="app.searchView.onShow" data-after-show="app.searchView.afterShow">
+<div data-role="view" data-title="Search" data-layout="mainnonav" data-model="app.searchView" data-show="app.searchView.onShow" data-after-show="app.searchView.afterShow">
     <div id="searchViewModel" class="form-view">
         <form>
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li>
+
                     <label>Departure
                         <input data-bind="value: searchViewModel.fields.departure" placeholder="Enter location" type="search">
                     </label>
+
                 </li>
                 <li>
+
                     <label>Destination
                         <input data-bind="value: searchViewModel.fields.destination" placeholder="Enter location/event" type="search">
                     </label>
+
                 </li>
                 <li class="group-separator">
                     <h4 class="group-separator-header">Time</h4>
                 </li>
                 <li>
+
                     <label>Check-in
                         <input data-bind="value: searchViewModel.fields.checkin" type="time">
                     </label>
+
                 </li>
                 <li>
+
                     <label>Check-out
                         <input data-bind="value: searchViewModel.fields.checkout" type="time">
                     </label>
+
                 </li>
             </ul>
 

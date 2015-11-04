@@ -42,7 +42,8 @@
             }
           ],
           "name": "searchViewModel",
-          "submitButton": "Go"
+          "submitButton": "Go",
+          "cancelButton": "Cancel"
         }
       ],
       "title": "Search",

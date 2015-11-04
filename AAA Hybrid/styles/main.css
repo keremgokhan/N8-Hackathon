@@ -75,6 +75,10 @@
     background-color: #fcfcfc;
 }
 
+#kendoUiMobileApp form .form-content li p {
+    margin: 0;
+}
+
 #kendoUiMobileApp .icon-group .app-icon,
 #kendoUiMobileApp .icon-group .app-details {
     display: table-cell;
@@ -105,15 +109,6 @@
     margin-top: 0.5em;
 }
 
-
-/* START_CUSTOM_CODE_kendoUiMobileApp */
-
-
-/* END_CUSTOM_CODE_kendoUiMobileApp */
-
-
-/*Fix navigation labels*/
-
 #kendoUiMobileApp #navigation-container.km-tabstrip .km-button {
     vertical-align: top;
 }
@@ -131,3 +126,9 @@
 #kendoUiMobileApp #navigation-container .active:after {
     color: #fff;
 }
+
+
+/* START_CUSTOM_CODE_kendoUiMobileApp */
+
+
+/* END_CUSTOM_CODE_kendoUiMobileApp */
