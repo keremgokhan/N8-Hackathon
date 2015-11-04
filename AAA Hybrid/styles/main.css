@@ -34,17 +34,17 @@
 
 #kendoUiMobileApp.km-flat .button-group .km-button.primary {
     color: #fff;
-    background-color: #10c4b2;
+    background-color: #0075FF; /*10c4b2*/
 }
 
 #kendoUiMobileApp.km-ios7 .button-group .km-button.primary {
     color: #fff;
-    background-color: #007aff;
+    background-color: #007aff; /*blue*/
 }
 
 #kendoUiMobileApp.km-android .button-group .km-button.primary {
     color: #fff;
-    background-color: #33b5e5;
+    background-color: #33b5e5; /*light blue*/
 }
 
 #kendoUiMobileApp .group-separator {
@@ -119,7 +119,7 @@
 }
 
 #kendoUiMobileApp #navigation-container .active {
-    background: #10c4b2;
+    background: #0075FF; /*10c4b2*/
     color: #fff;
 }
 
@@ -129,6 +129,64 @@
 
 
 /* START_CUSTOM_CODE_kendoUiMobileApp */
+/*Navbar*/
+.km-accent.km-navbar {
+    background-color: #0075FF;
+    color: #fff;
+}
 
+/*List*/
+ul.parkingOptions, ul.parkingOptions p {
+    margin:0;
+}
 
+ul.parkingOptions .optionIcn {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 0.7em;
+    width: 12%;
+    height:50px;
+}
+
+    ul.parkingOptions .optionPublic {
+        background-image: url(Img/parc_op_PB.png);
+    }
+
+    ul.parkingOptions .optionBike {
+        background-image: url(Img/parc_op_PBi.png);
+    }
+
+    ul.parkingOptions .optionCar {
+        background-image: url(Img/parc_op_P.png);
+    }
+
+ul.parkingOptions .optionContent{
+    display: inline-block;
+    width: 80%;
+}
+
+ul.parkingOptions .cost, ul.parkingOptions .time {
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 0.3em;
+    height:0.9em;
+}
+
+    ul.parkingOptions .cost {
+        background-image: url(Img/parc_op_EU.png);
+        width: 0.6em;
+    }
+
+	ul.parkingOptions .sorted {
+        color: #0075FF;
+    }
+
+	ul.parkingOptions .time {
+        background-image: url(Img/parc_op_TI.png);
+        margin-left: 0.7em;
+        width: 0.9em;
+    }
 /* END_CUSTOM_CODE_kendoUiMobileApp */
