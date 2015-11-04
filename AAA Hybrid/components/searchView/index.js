@@ -17,6 +17,7 @@ app.searchView = kendo.observable({
             departure: '',
         },
         submit: function() {
+            // TODO: Verify form data
             app.mobileApp.navigate('components/parkingOptionsView/view.html');
         }
     });
