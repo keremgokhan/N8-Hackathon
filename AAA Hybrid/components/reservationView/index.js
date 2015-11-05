@@ -9,7 +9,6 @@ app.reservationView = kendo.observable({
 // END_CUSTOM_CODE_reservationView
 (function(parent) {
     var reservationViewModel = kendo.observable({
-        fields: {
             cvv: '',
             year: '',
             month: '',
@@ -18,8 +17,22 @@ app.reservationView = kendo.observable({
             email: '',
             phone: '',
             fullname: '',
+        autofill: function() {
+            this.set("cvv", '522');
+            this.set("year", '18');
+            this.set("month", '01');
+            this.set("cardnumber", '1234 5678 9012 3456');
+            this.set("email", 'barrychenqibai@gmail.com');
+            this.set("phone", '+31614916528');
+            this.set("fullname", 'Barry Chen');
         },
-        submit: function() {},
+        submit: function() {
+              setTimeout(function() {
+                alert('Confirmed!');
+                window.history.back();
+              }, 300);
+            
+        },
         cancel: function() {}
     });
 

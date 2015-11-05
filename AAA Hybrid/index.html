@@ -33,6 +33,21 @@
         <footer data-role="footer">
         </footer>
     </div>
+    
+    <div data-role="layout" data-id="reservation">
+        <header data-role="header">
+            <div data-role="navbar" class="km-accent">
+                <a data-role="backbutton" data-align="left">Back</a>
+                <a data-role="button" data-align="right" data-icon="compose" data-click="autofill"></a>
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+
+        <!-- application views will be rendered here -->
+
+        <footer data-role="footer">
+        </footer>
+    </div>
 
     <div data-role="layout" data-id="option">
         <header data-role="header">
@@ -53,8 +68,8 @@
         <!-- application views will be rendered here -->
 
         <footer data-role="footer">
-            <a class="optionPageFooter" data-role="button" href="">Navigate</a>
-            <a class="optionPageFooter" data-role="button" href="">Reserve</a>
+            <a class="optionPageFooter" data-role="button" data-rel="external" target="_blank" href="https://www.google.nl/maps/dir/P%2BR+Sloterdijk,+Piarcoplein,+Westpoort,+Amsterdam/Delft/@52.2007635,4.2977003,10z/am=t/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47c5e2589edef287:0xf8936ae86fd0019c!2m2!1d4.8381421!2d52.390359!1m5!1m1!1s0x47c5b5c3515f58fd:0x89b05ca3c54bd43d!2m2!1d4.3570677!2d52.0115769">Navigate</a>
+            <a class="optionPageFooter" data-role="button" href="components/reservationView/view.html">Reserve</a>
         </footer>
     </div>
 
@@ -72,6 +87,11 @@
     </div>
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
+    <script>
+        function autofill(e) {
+            app.reservationView.reservationViewModel.autofill();
+        }
+    </script>
 </body>
 
 </html>

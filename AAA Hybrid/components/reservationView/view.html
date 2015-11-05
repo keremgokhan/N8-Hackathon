@@ -1,25 +1,25 @@
-<div data-role="view" data-title="Reserve" data-layout="main" data-model="app.reservationView" data-show="app.reservationView.onShow" data-after-show="app.reservationView.afterShow">
+<div data-role="view" data-title="Reserve" data-layout="reservation" data-model="app.reservationView" data-show="app.reservationView.onShow" data-after-show="app.reservationView.afterShow">
     <div id="reservationViewModel" class="form-view">
         <form>
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li>
 
                     <label>Full Name
-                        <input data-bind="value: reservationViewModel.fields.fullname" placeholder="Enter your full name" type="text">
+                        <input data-bind="value: reservationViewModel.fullname" placeholder="Enter your full name" type="text">
                     </label>
 
                 </li>
                 <li>
 
                     <label>Phone
-                        <input data-bind="value: reservationViewModel.fields.phone" placeholder="Ex: +31 0 444 555 666" type="tel">
+                        <input data-bind="value: reservationViewModel.phone" placeholder="Ex: +31 0 444 555 666" type="tel">
                     </label>
 
                 </li>
                 <li>
 
                     <label>Email
-                        <input data-bind="value: reservationViewModel.fields.email" placeholder="example@example.com" type="email">
+                        <input data-bind="value: reservationViewModel.email" placeholder="example@example.com" type="email">
                     </label>
 
                 </li>
@@ -29,35 +29,34 @@
                 <li>
 
                     <label>Card number
-                        <input data-bind="value: reservationViewModel.fields.cardnumber" placeholder="1111 1111 1111 1111" type="text">
+                        <input data-bind="value: reservationViewModel.cardnumber" placeholder="1111 1111 1111 1111" type="text">
                     </label>
 
                 </li>
                 <li>
 
                     <label>Month
-                        <input data-bind="value: reservationViewModel.fields.month" type="number">
+                        <input data-bind="value: reservationViewModel.month" type="number">
                     </label>
 
                 </li>
                 <li>
 
                     <label>Year
-                        <input data-bind="value: reservationViewModel.fields.year" type="number">
+                        <input data-bind="value: reservationViewModel.year" type="number">
                     </label>
 
                 </li>
                 <li>
 
                     <label>CVV
-                        <input data-bind="value: reservationViewModel.fields.cvv" placeholder="111" type="text">
+                        <input data-bind="value: reservationViewModel.cvv" placeholder="111" type="text">
                     </label>
 
                 </li>
             </ul>
 
             <div class="button-group">
-                <a data-role="button" data-bind="events: { click: reservationViewModel.cancel }">Cancel</a>
                 <a class="primary" data-role="button" data-bind="events: { click: reservationViewModel.submit }">Confirm</a>
             </div>
         </form>
