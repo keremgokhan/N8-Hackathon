@@ -130,7 +130,10 @@
 
 /* START_CUSTOM_CODE_kendoUiMobileApp */
 .appIcon{
-    background-color: #0075FF;
+    background-image: url(Img/main.png);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
     margin: 2em auto;
     width: 6em;
     height: 6em;
@@ -149,6 +152,22 @@
 .km-accent.km-navbar {
     background-color: #0075FF;
     color: #fff;
+}
+
+.actionIcon {
+    width:3.5em;
+    height:44%;
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.typeIcon {
+    background-image: url(Img/parc_de_PandBU.png);
+}
+
+.sortIcon {
+    background-image: url(Img/parc_op_SORT_TI.png);
 }
 
 /*Footer*/
@@ -178,16 +197,16 @@ ul.parkingOptions, ul.parkingOptions p {
     margin:0;
 }
 
-ul.parkingOptions .optionIcn {
+ul.parkingOptions .optionIcn{
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     display: inline-block;
     margin-right: 0.7em;
     width: 12%;
-    height:50px;
+    height:3.4em;
 }
-
+	/*Public transport options*/
     ul.parkingOptions .optionPublic {
         background-image: url(Img/parc_op_PB.png);
     }
@@ -198,6 +217,18 @@ ul.parkingOptions .optionIcn {
 
     ul.parkingOptions .optionCar {
         background-image: url(Img/parc_op_P.png);
+    }
+
+	/*Route steps*/
+	ul.parkingOptions .routePark {
+        background-image: url(Img/parc_de_P.png);
+    }
+	ul.parkingOptions .routeWalk {
+        background-image: url(Img/parc_de_W.png);
+    }
+
+	ul.parkingOptions .routePublic {
+        background-image: url(Img/parc_de_B.png);
     }
 
 ul.parkingOptions .optionContent{
@@ -237,27 +268,26 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
 
 .subTitle > span {
     color: #FFF;
-    font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
-.subTitle > .time, .subTitle > .cost {
+.subTitle .time, .subTitle .cost {
     background-size: contain;
     background-repeat: no-repeat;
-    display: inline-block;
-    margin-right: 0.3em;
-    height:0.9em;
+    display: inline-block !important;
+    margin-right: 0.5em;
+    margin-left: 0.9em;
+    height:1.1em;
 }
 
-.subTitle > .cost {
-        background-image: url(Img/parc_op_EU.png);
-        width: 0.6em;
+.subTitle .cost {
+        background-image: url(Img/parc_de_EU.png);
+        width: 0.7em;
     }
 
-.subTitle > .time {
-        background-image: url(Img/parc_op_TI.png);
-        margin-left: 0.7em;
-        width: 0.9em;
+.subTitle .time {
+        background-image: url(Img/parc_de_TI.png);
+        width: 1.1em;
         display: inline;
 }
 
@@ -267,6 +297,7 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
     width: 100%;
     color: #FFF;
     text-align: center;
+    padding:0.2em;
 }
 
 .availability > span {
@@ -286,11 +317,20 @@ ul.route > li {
     display: none;
 }
 
+.stepTitle{
+    width: 100%;
+    position: absolute;
+    top: 1.7em;
+}
+
 .map {
-    background-color: #E6E6E6;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(Img/Map_to_PR.png);
+    border: 2px solid #D7D7D7;
     display: block;
     width: 100%;
-    height: 10em;
+    height: 15.2em;
 }
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */
