@@ -1,13 +1,49 @@
-<div data-role="view" data-title="P+R Sloterdijk" data-layout="main" data-model="app.optionView" data-show="app.optionView.onShow" data-after-show="app.optionView.afterShow">
+<div data-role="view" data-title="P+R Sloterdijk" data-layout="option" data-model="app.optionView" data-show="app.optionView.onShow" data-after-show="app.optionView.afterShow">
     <!-- START_CUSTOM_CODE_optionView -->
     
-    <div class='subTitle'>
-       <span>&euro; 15.00</span>
-       <span>29 min</span>
-    </div>
-    <div class='availablity'>
-       <span>Only 20 spots available</span>
-    </div>
+    
+    <ul data-role="listview" data-style="inset" class="parkingOptions route">
+        <li class='active'>
+            <div class="optionIcn optionCar touch"></div>
+            <div class="optionContent">
+            	<p><strong>P+R Sloterdijk</strong></p>
+                <div class='toHide'>
+                	<p>Piarcoplein 1</p>
+                    <div class='map'></div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="optionIcn optionCar touch"></div>
+            <div class="optionContent">
+            	<p><strong>Station Sloterdijk</strong></p>
+                <div class='toHide'>
+                	<p>Delftweg</p>
+                    <div class='map'></div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="optionIcn optionCar touch"></div>
+            <div class="optionContent">
+            	<p><strong>Van Baerlerstraat</strong></p>
+                <div class='toHide'>
+                	<p>Van Baerlerstraat</p>
+                    <div class='map'></div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="optionIcn optionCar touch"></div>
+            <div class="optionContent">
+            	<p><strong>Rijksmuseum</strong></p>
+                <div class='toHide'>
+                	<p>Museumstraat</p>
+                    <div class='map'></div>
+                </div>
+            </div>
+        </li>
+    </ul>
     
     <!-- END_CUSTOM_CODE_optionView -->
 </div>

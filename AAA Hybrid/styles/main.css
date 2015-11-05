@@ -151,6 +151,28 @@
     color: #fff;
 }
 
+/*Footer*/
+.km-footer {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+}
+
+/*Button*/
+.km-flat .km-button {
+    background-color: #0075FF;
+    color: #fff;
+    text-align: center;
+}
+
+.optionPageFooter {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    width: 40%;
+}
+
 /*List*/
 ul.parkingOptions, ul.parkingOptions p {
     margin:0;
@@ -205,4 +227,70 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
         margin-left: 0.7em;
         width: 0.9em;
     }
+
+.subTitle {
+    background-color: #0075FF;
+    display: inline-block;
+    width: 100%;
+    padding: 0.3em;
+}
+
+.subTitle > span {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.subTitle > .time, .subTitle > .cost {
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 0.3em;
+    height:0.9em;
+}
+
+.subTitle > .cost {
+        background-image: url(Img/parc_op_EU.png);
+        width: 0.6em;
+    }
+
+.subTitle > .time {
+        background-image: url(Img/parc_op_TI.png);
+        margin-left: 0.7em;
+        width: 0.9em;
+        display: inline;
+}
+
+.availability {
+    background-color: #FF9D00;
+    display: inline-block;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+}
+
+.availability > span {
+    font-size: 0.8em;
+}
+
+ul.route > li {
+    border: 0 !important;
+    background: transparent !important;
+}
+
+.active .toHide {
+    display: inline;
+}
+
+.toHide {
+    display: none;
+}
+
+.map {
+    background-color: #E6E6E6;
+    display: block;
+    width: 100%;
+    height: 10em;
+}
+
 /* END_CUSTOM_CODE_kendoUiMobileApp */
