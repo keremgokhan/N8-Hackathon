@@ -3,9 +3,9 @@
   "ProjectGuid": "6b32f4bc-b668-4f6c-b4c2-c33a92291db6",
   "projectVersion": 1,
   "AppIdentifier": "com.telerik.AAAHybrid",
-  "DisplayName": "AAA Hybrid",
+  "DisplayName": "AAA ",
   "Author": "",
-  "Description": "AAA Hybrid",
+  "Description": "Helps you to find you a place to park your car.",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -44,5 +44,6 @@
   ],
   "CorePlugins": [
     "org.apache.cordova.network-information"
-  ]
+  ],
+  "iOSDeploymentTarget": "6.0"
 }
