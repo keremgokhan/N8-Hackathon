@@ -65,6 +65,76 @@
       "title": "Parking Options",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "reservationView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "fullname",
+              "title": "Full Name",
+              "inputType": "text",
+              "placeholder": "Enter your full name"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "phone",
+              "title": "Phone",
+              "inputType": "tel",
+              "placeholder": "Ex: +31 0 444 555 666"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "email",
+              "title": "Email",
+              "inputType": "email",
+              "placeholder": "example@example.com"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "card",
+              "title": "Card Details",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "cardnumber",
+              "title": "Card number",
+              "inputType": "text",
+              "placeholder": "1111 1111 1111 1111"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "month",
+              "title": "Month",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "year",
+              "title": "Year",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "cvv",
+              "title": "CVV",
+              "inputType": "text",
+              "placeholder": "111"
+            }
+          ],
+          "name": "reservationViewModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Reserve",
+      "addToNavigation": true,
+      "icon": "bookmarks"
     }
   ],
   "dataProviders": [],

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link href="bower_components/kendo-ui-appbuilder-core/styles/kendo.mobile.all.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-    
+
 
     <script src="cordova.js"></script>
     <script src="bower_components/kendo-ui-appbuilder-core/js/jquery.min.js"></script>
@@ -15,6 +15,7 @@
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/reservationView/index.js"></script>
     <script src="components/parkingOptionsView/index.js"></script>
     <script src="components/optionView/index.js"></script>
     <script src="components/searchView/index.js"></script>
@@ -32,7 +33,7 @@
         <footer data-role="footer">
         </footer>
     </div>
-    
+
     <div data-role="layout" data-id="option">
         <header data-role="header">
             <div data-role="navbar" class="km-accent">
@@ -40,12 +41,12 @@
                 <div class="actionIcon typeIcon" data-align="right"></div>
                 <span data-role="view-title"></span>
             </div>
-            <div class='subTitle'>
+            <div class="subTitle">
                 <div class="cost"></div><span>15.00</span>
                 <div class="time"></div><span>29 min</span>
             </div>
-            <div class='availability'>
-               <span>Only 20 spots available</span>
+            <div class="availability">
+                <span>Only 20 spots available</span>
             </div>
         </header>
 
