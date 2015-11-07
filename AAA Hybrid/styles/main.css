@@ -154,12 +154,14 @@
     color: #fff;
 }
 
-.actionIcon {
+.km-navbar .km-rightitem .actionIcon {
     width:3.5em;
     height:44%;
     background-size: contain;
     background-position: center right;
     background-repeat: no-repeat;
+    padding: 0;
+    border: none;
 }
 	/*Parking type*/
     .typePublic {
@@ -181,6 +183,11 @@
 
     .sortByCost {
         background-image: url(Img/list_sort_EU.png);
+    }
+	
+	/*Login*/
+	.loginIcn {
+        background-image: url(Img/login_ico.png) !important;
     }
 
 /*Footer*/
@@ -232,12 +239,12 @@ ul.parkingOptions .optionIcn{
         background-image: url(Img/list_type_P.png);
     }
 
-	/*Route steps*/
+/*Route steps*/
 	ul.parkingOptions .routeParkOn {
-        background-image: url(Img/route_PT_on.png);
+        background-image: url(Img/route_P_on.png);
     }
 	ul.parkingOptions .routeParkOff {
-        background-image: url(Img/route_PT_off.png);
+        background-image: url(Img/route_P_off.png);
     }
 
 	ul.parkingOptions .routeWalkOn {
@@ -279,7 +286,7 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
         width: 0.6em;
     }
 
-	l.parkingOptions .cost.sorted {
+	ul.parkingOptions .cost.sorted {
         background-image: url(Img/list_EU_on.png);
         width: 0.6em;
     }

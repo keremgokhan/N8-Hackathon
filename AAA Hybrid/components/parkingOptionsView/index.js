@@ -55,7 +55,7 @@ var loadlist = function(results) {
                             '<p><strong>#:data.name#</strong></p>' +
                             '<p>#:data.address# (#:data.distance#)</p>' +
                             '<p>' +
-                                '<div class="cost"></div>' +
+                                '<div class="cost sorted"></div>' +
                                 '<span class="sorted">#:data.cost#</span>' +
                                 '<div class="time"></div>' +
                                 '<span>#:data.pt_duration# min</span>' +
