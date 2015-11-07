@@ -28,7 +28,7 @@ app.reservationView = kendo.observable({
         },
         submit: function() {
               setTimeout(function() {
-                alert('Confirmed!');
+                alert('Parking spot reserved!');
                 window.history.back();
               }, 300);
             

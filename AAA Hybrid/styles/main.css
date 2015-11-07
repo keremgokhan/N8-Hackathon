@@ -144,7 +144,11 @@
 }
 
 .form-content.km-list input[type=search],
-.form-content.km-list input[type=time]{
+.form-content.km-list input[type=time],
+.form-content.km-list input[type=text],
+.form-content.km-list input[type=tel],
+.form-content.km-list input[type=email],
+.form-content.km-list input[type=number]{
     width: 65%;
 }
 
