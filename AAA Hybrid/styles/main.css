@@ -158,6 +158,10 @@
     color: #fff;
 }
 
+.km-navbar .km-rightitem {
+    height:70% !important;
+}
+
 .km-navbar .km-rightitem .actionIcon {
     width:3.5em;
     height:44%;
