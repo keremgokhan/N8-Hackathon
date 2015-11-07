@@ -161,14 +161,27 @@
     background-position: center right;
     background-repeat: no-repeat;
 }
+	/*Parking type*/
+    .typePublic {
+        background-image: url(Img/item_type_PT.png);
+    }
 
-.typeIcon {
-    background-image: url(Img/item_type_PT.png);
-}
+    .typeBike {
+        background-image: url(Img/item_type_PT.png);
+    }
 
-.sortIcon {
-    background-image: url(Img/list_sort_TI.png);
-}
+    .typeCar {
+        background-image: url(Img/item_type_PT.png);
+    }
+
+	/*Sort button*/
+    .sortByTime {
+        background-image: url(Img/list_sort_TI.png);
+    }
+
+    .sortByCost {
+        background-image: url(Img/list_sort_EU.png);
+    }
 
 /*Footer*/
 .km-footer {
@@ -220,18 +233,31 @@ ul.parkingOptions .optionIcn{
     }
 
 	/*Route steps*/
-	ul.parkingOptions .routePark {
+	ul.parkingOptions .routeParkOn {
         background-image: url(Img/route_PT_on.png);
     }
-	ul.parkingOptions .routeWalk {
-        background-image: url(Img/route_W_off.png);
-    }
-
-	ul.parkingOptions .routePublic {
+	ul.parkingOptions .routeParkOff {
         background-image: url(Img/route_PT_off.png);
     }
 
-	ul.parkingOptions .routeBike {
+	ul.parkingOptions .routeWalkOn {
+        background-image: url(Img/route_W_on.png);
+    }
+	ul.parkingOptions .routeWalkOff {
+        background-image: url(Img/route_W_off.png);
+    }
+
+	ul.parkingOptions .routePublicOn {
+        background-image: url(Img/route_PT_on.png);
+    }
+	ul.parkingOptions .routePublicOff {
+        background-image: url(Img/route_PT_off.png);
+    }
+
+	ul.parkingOptions .routeBikeOn {
+        background-image: url(Img/route_B_on.png);
+    }
+	ul.parkingOptions .routeBikeOff {
         background-image: url(Img/route_B_off.png);
     }
 
@@ -249,12 +275,13 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
 }
 
     ul.parkingOptions .cost {
-        background-image: url(Img/list_EU_on.png);
+        background-image: url(Img/list_EU_off.png);
         width: 0.6em;
     }
 
-	ul.parkingOptions .sorted {
-        color: #0075FF;
+	l.parkingOptions .cost.sorted {
+        background-image: url(Img/list_EU_on.png);
+        width: 0.6em;
     }
 
 	ul.parkingOptions .time {
@@ -263,6 +290,18 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
         width: 0.9em;
     }
 
+	ul.parkingOptions .time.sorted {
+        background-image: url(Img/list_TI_on.png);
+        margin-left: 0.7em;
+        width: 0.9em;
+    }
+
+	ul.parkingOptions .sorted {
+        color: #0075FF;
+    }
+
+
+/*Option details*/
 .subTitle {
     background-color: #0075FF;
     display: inline-block;
@@ -270,30 +309,30 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
     padding: 0.3em;
 }
 
-.subTitle > span {
-    color: #FFF;
-    font-size: 1.4em;
-}
-
-.subTitle .time, .subTitle .cost {
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block !important;
-    margin-right: 0.5em;
-    margin-left: 0.9em;
-    height:1.1em;
-}
-
-.subTitle .cost {
-        background-image: url(Img/item_EU.png);
-        width: 0.75em;
+    .subTitle > span {
+        color: #FFF;
+        font-size: 1.4em;
     }
 
-.subTitle .time {
-        background-image: url(Img/item_TI.png);
-        width: 1.13em;
-        display: inline;
-}
+    .subTitle .time, .subTitle .cost {
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block !important;
+        margin-right: 0.5em;
+        margin-left: 0.9em;
+        height:1.1em;
+    }
+
+    .subTitle .cost {
+            background-image: url(Img/item_EU.png);
+            width: 0.75em;
+        }
+
+    .subTitle .time {
+            background-image: url(Img/item_TI.png);
+            width: 1.13em;
+            display: inline;
+    }
 
 .availability {
     background-color: #FF9D00;
@@ -304,9 +343,9 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
     padding:0.2em;
 }
 
-.availability > span {
-    font-size: 0.8em;
-}
+    .availability > span {
+        font-size: 0.8em;
+    }
 
 ul.route > li {
     border: 0 !important;
