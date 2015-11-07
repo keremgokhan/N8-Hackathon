@@ -18,10 +18,20 @@ app.searchView = kendo.observable({
         },
         submit: function() {
             // TODO: Verify form data
-            //$.getJSON("http://divvapi.parkshark.nl/apitest.jsp?action=plan&to_lat=52.368104267594056&to_lon=4.856208655327167&dd=28&mm=12&yy=2013&h=12&m=50&dur=2&opt_routes=y&opt_routes_ret=n&opt_am=n&opt_rec=y",
-            //          null,
-            //          function (Console.log(data)));
             var locations = [];
+            var checkin_hhmm = searchViewModel.fields.checkin.split(":");
+            var checkout_hhmm = searchViewModel.fields.checkout.split(":");
+            var checkin_h = parseInt(checkin_hhmm[0]);
+            var checkin_m = parseInt(checkin_hhmm[1]);
+            var checkout_h = parseInt(checkout_hhmm[0]);
+            var checkout_m = parseInt(checkout_hhmm[1]);
+            var hours = checkout_h - checkin_h;
+            var minutes = checkout_m - checkin_m;
+            if (minutes < 0) {
+                hours -= 1;
+                minutes += 60;
+            }
+            var duration = Math.ceil(hours + minutes/60);
             geolocate([searchViewModel.fields.departure, searchViewModel.fields.destination], 0, locations, function () {
                 app.departure = { lat: locations[0].lat(), lng: locations[0].lng() };
                 app.destination = { lat: locations[1].lat(), lng: locations[1].lng() };
@@ -34,7 +44,10 @@ app.searchView = kendo.observable({
                           "&dd=" + app.day +
                           "&mm=" + app.month + 
                           "&yy=" + app.year +
-                          "&h=18&m=50&dur=2&opt_routes=y&opt_routes_ret=n&opt_am=n&opt_rec=y",
+                          "&h=" + checkin_h +
+                          "&m=" + checkin_m + 
+                          "&dur=" + duration +
+                          "&opt_routes=y&opt_routes_ret=n&opt_am=n&opt_rec=y",
                           null,
                           function (data, textStatus, req) {
                     	app.parkingData = data;
