@@ -163,11 +163,11 @@
 }
 
 .typeIcon {
-    background-image: url(Img/parc_de_PandBU.png);
+    background-image: url(Img/item_type_PT.png);
 }
 
 .sortIcon {
-    background-image: url(Img/parc_op_SORT_TI.png);
+    background-image: url(Img/list_sort_TI.png);
 }
 
 /*Footer*/
@@ -208,27 +208,31 @@ ul.parkingOptions .optionIcn{
 }
 	/*Public transport options*/
     ul.parkingOptions .optionPublic {
-        background-image: url(Img/parc_op_PB.png);
+        background-image: url(Img/list_type_PT.png);
     }
 
     ul.parkingOptions .optionBike {
-        background-image: url(Img/parc_op_PBi.png);
+        background-image: url(Img/list_type_B.png);
     }
 
     ul.parkingOptions .optionCar {
-        background-image: url(Img/parc_op_P.png);
+        background-image: url(Img/list_type_P.png);
     }
 
 	/*Route steps*/
 	ul.parkingOptions .routePark {
-        background-image: url(Img/parc_de_P.png);
+        background-image: url(Img/route_PT_on.png);
     }
 	ul.parkingOptions .routeWalk {
-        background-image: url(Img/parc_de_W.png);
+        background-image: url(Img/route_W_off.png);
     }
 
 	ul.parkingOptions .routePublic {
-        background-image: url(Img/parc_de_B.png);
+        background-image: url(Img/route_PT_off.png);
+    }
+
+	ul.parkingOptions .routeBike {
+        background-image: url(Img/route_B_off.png);
     }
 
 ul.parkingOptions .optionContent{
@@ -245,7 +249,7 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
 }
 
     ul.parkingOptions .cost {
-        background-image: url(Img/parc_op_EU.png);
+        background-image: url(Img/list_EU_on.png);
         width: 0.6em;
     }
 
@@ -254,7 +258,7 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
     }
 
 	ul.parkingOptions .time {
-        background-image: url(Img/parc_op_TI.png);
+        background-image: url(Img/list_TI_off.png);
         margin-left: 0.7em;
         width: 0.9em;
     }
@@ -281,13 +285,13 @@ ul.parkingOptions .cost, ul.parkingOptions .time {
 }
 
 .subTitle .cost {
-        background-image: url(Img/parc_de_EU.png);
-        width: 0.7em;
+        background-image: url(Img/item_EU.png);
+        width: 0.75em;
     }
 
 .subTitle .time {
-        background-image: url(Img/parc_de_TI.png);
-        width: 1.1em;
+        background-image: url(Img/item_TI.png);
+        width: 1.13em;
         display: inline;
 }
 
