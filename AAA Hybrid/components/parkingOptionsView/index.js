@@ -12,6 +12,7 @@ app.parkingOptionsView = kendo.observable({
 var filter = function(arr) {
     var result = [];
     
+    var last_pt_duration = 5;
     for (var i = 0; i < arr.length; i++) {
         var x = arr[i];
         
@@ -31,6 +32,15 @@ var filter = function(arr) {
             var km = x.dist_in_meters/1000;
             row.distance = km.toFixed(2).toString() + " km";
         }
+        
+        if (x.reccommended_pt_route && x.reccommended_pt_route.duration) {
+            row.pt_duration = Math.round(x.reccommended_pt_route.duration / 60);
+			last_pt_duration = row.pt_duration;
+        } else {
+            row.pt_duration = last_pt_duration + "+";
+        }
+        
+        
         result.push(row);
     }
     
@@ -48,7 +58,7 @@ var loadlist = function(results) {
                                 '<div class="cost"></div>' +
                                 '<span class="sorted">#:data.cost#</span>' +
                                 '<div class="time"></div>' +
-                                '<span>5 min</span>' +
+                                '<span>#:data.pt_duration# min</span>' +
                             '</p></div></a>';
             
             $("#searchResults").kendoMobileListView({
