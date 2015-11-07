@@ -154,12 +154,14 @@
     color: #fff;
 }
 
-.actionIcon {
+.km-navbar .km-rightitem .actionIcon {
     width:3.5em;
     height:44%;
     background-size: contain;
     background-position: center right;
     background-repeat: no-repeat;
+    padding: 0;
+    border: none;
 }
 	/*Parking type*/
     .typePublic {
@@ -181,6 +183,11 @@
 
     .sortByCost {
         background-image: url(Img/list_sort_EU.png);
+    }
+	
+	/*Login*/
+	.loginIcn {
+        background-image: url(Img/login_ico.png) !important;
     }
 
 /*Footer*/
